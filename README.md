@@ -27,6 +27,8 @@ Friends are authorized via Discord OAuth2 and their profile picture is added aut
 
 ## Preview
 
+> Add screenshots/GIFs of the website and wallpaper here.
+
 <p align="center">
   <img src="docs/website.png" width="48%" alt="Website preview">
   <img src="docs/wallpaper.png" width="48%" alt="Wallpaper preview">
@@ -41,4 +43,4 @@ Friends are authorized via Discord OAuth2 and their profile picture is added aut
 * Usernames are shown underneath each avatar
 * Wallpaper is automatically generated as a PNG file
 * Windows automatically switches to the new wallpaper
-* Avatars are periodically checked for any
+* Avatars are periodically checked for changes
