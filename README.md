@@ -1,3 +1,5 @@
+# become me wallpaper
+## only for windows oki
 clone w/ github stuff which u can check or with git
 ```
 git clone https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper.git
@@ -15,3 +17,13 @@ okay now run it
 ```
 py app.py
 ```
+also to change the port go into app.py
+and change
+```
+    app.run(
+        host="0.0.0.0",
+        port=5035,
+        debug=False,
+    )
+```
+at line 498-492 and to port to whatever port you want it to be on and kaboom you have wallpaper website 
