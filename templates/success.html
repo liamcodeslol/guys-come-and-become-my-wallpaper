@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="/favicon">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>You're on the wallpaper</title>
+
+  <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url("/wallpaper") center center / cover no-repeat fixed;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .page {
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 48px 7vw;
+        }
+
+<div class="footer">
+    <a
+        href="https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+    >
+        <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.11c.97 0 1.94.13 2.85.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+        </svg>
+
+        <span>Go to open source project on GitHub!</span>
+    </a>
+</div>
+
+        .small {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        h1 {
+            max-width: 1050px;
+            margin: 0 0 34px;
+            font-size: clamp(48px, 8vw, 110px);
+            line-height: 0.91;
+            letter-spacing: -0.065em;
+            font-weight: 800;
+        }
+
+        p {
+            max-width: 580px;
+            font-size: 18px;
+            line-height: 1.55;
+            margin: 0 0 28px;
+            color: #ddd;
+        }
+
+        .button {
+            width: fit-content;
+            background: white;
+            color: #111;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 32px;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page success">
+        <div class="small">
+            DONE
+        </div>
+
+        <h1>
+            you're on {{ owner }}'s wallpaper now!
+        </h1>
+
+        <p>
+            your pfp has been added.
+        </p>
+
+        <p>
+            sending you back to Discord in
+            <b id="count">5</b>
+            seconds!
+        </p>
+    </main>
+
+    <script>
+        let count = 5;
+        const element = document.getElementById("count");
+
+        const timer = setInterval(() => {
+            count--;
+            element.textContent = count;
+
+            if (count <= 0) {
+                clearInterval(timer);
+                window.location.href = "https://discord.com/app";
+            }
+        }, 1000);
+    </script>
+</body>
+<div class="footer">
+    <a
+        href="https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-link"
+    >
+        <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.11c.97 0 1.94.13 2.85.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+        </svg>
+
+        <span>Go to open source project on GitHub!</span>
+    </a>
+</div>
+
+</html>
