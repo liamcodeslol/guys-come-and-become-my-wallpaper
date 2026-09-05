@@ -27,8 +27,6 @@ Friends are authorized via Discord OAuth2 and their profile picture is added aut
 
 ## Preview
 
-> Add screenshots/GIFs of the website and wallpaper here.
-
 <p align="center">
   <img src="docs/website.png" width="48%" alt="Website preview">
   <img src="docs/wallpaper.png" width="48%" alt="Wallpaper preview">
