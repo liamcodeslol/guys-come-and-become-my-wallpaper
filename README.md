@@ -11,8 +11,8 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/opensource-true-brightgreen">
 
 </p>
-##if you dont know how to make a discord bot and get its oauth stuff
-**okay then ask me how to do it my discord is liamcodeslol**
+If you dont know how to make a discord bot and get its oauth stuff
+<strong>okay then ask me how to do it my discord is liamcodeslol</strong>
 
 clone w/ github stuff which u can check or with git
 pls star pls pls
