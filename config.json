@@ -1,0 +1,9 @@
+{
+  "discord_client_id": "insert", // Your Discord Bot client id
+  "discord_client_secret": "insert", // Your Discord Bot Client Secret
+  "redirect_uri": "https://example.com/oauth/callback", // Callback for Discord
+  "owner_name": "Example", // The name used for your wallpaper thingy
+  "wallpaper_width": 1920,
+  "wallpaper_height": 1080,
+  "avatar_check_seconds": 300
+}

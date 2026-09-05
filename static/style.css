@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #0d0d0f;
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+.wallpaper-bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dark-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.52);
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.page {
+    position: relative;
+    z-index: 2;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding:
+        48px
+        clamp(28px, 7vw, 110px);
+}
+
+.small {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+
+    margin-bottom: 30px;
+
+    color: #ddd;
+}
+
+h1 {
+    max-width: 1050px;
+
+    margin: 0 0 34px;
+
+    font-size:
+        clamp(48px, 8vw, 110px);
+
+    line-height: 0.91;
+    letter-spacing: -0.065em;
+    font-weight: 800;
+
+    color: #fff;
+
+    text-shadow:
+        0 3px 25px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    max-width: 580px;
+
+    font-size: 18px;
+    line-height: 1.55;
+
+    margin: 0 0 28px;
+
+    color: #ddd;
+
+    text-shadow:
+        0 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    display: inline-block;
+    width: fit-content;
+
+    background: #fff;
+    color: #111;
+
+    padding: 15px 20px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+.footer {
+    position: absolute;
+
+    bottom: 32px;
+    left: clamp(28px, 7vw, 110px);
+
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    color: #aaa;
+}
+
+.success {
+    max-width: 1200px;
+}
+
+.success h1 {
+    max-width: 1100px;
+}
+
+b {
+    font-weight: 800;
+    color: #fff;
+}

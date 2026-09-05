@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="/favicon">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>You're on the wallpaper</title>
+
+  <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                url("/wallpaper") center center / cover no-repeat fixed;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .page {
+            min-height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 48px 7vw;
+        }
+
+        .small {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        h1 {
+            max-width: 1050px;
+            margin: 0 0 34px;
+            font-size: clamp(48px, 8vw, 110px);
+            line-height: 0.91;
+            letter-spacing: -0.065em;
+            font-weight: 800;
+        }
+
+        p {
+            max-width: 580px;
+            font-size: 18px;
+            line-height: 1.55;
+            margin: 0 0 28px;
+            color: #ddd;
+        }
+
+        .button {
+            width: fit-content;
+            background: white;
+            color: #111;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 32px;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page success">
+        <div class="small">
+            DONE
+        </div>
+
+        <h1>
+            you're on {{ owner }}'s wallpaper now!
+        </h1>
+
+        <p>
+            your pfp has been added.
+        </p>
+
+        <p>
+            sending you back to Discord in
+            <b id="count">5</b>
+            seconds!
+        </p>
+    </main>
+
+    <script>
+        let count = 5;
+        const element = document.getElementById("count");
+
+        const timer = setInterval(() => {
+            count--;
+            element.textContent = count;
+
+            if (count <= 0) {
+                clearInterval(timer);
+                window.location.href = "https://discord.com/app";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
