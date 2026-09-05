@@ -1,8 +1,16 @@
 {
-  "discord_client_id": "insert", // Your Discord Bot client id
-  "discord_client_secret": "insert", // Your Discord Bot Client Secret
-  "redirect_uri": "https://example.com/oauth/callback", // Callback for Discord
-  "owner_name": "Example", // The name used for your wallpaper thingy
+  "_comment": "Your Discord Bot client ID.",
+  "discord_client_id": "INSERT",
+
+  "_comment2": "Generate a bot client secret in the Discord Developer Portal.",
+  "discord_client_secret": "INSERT",
+
+  "_comment3": "Discord OAuth callback URL.",
+  "redirect_uri": "https://example.COm/oauth/callback",
+
+  "_comment4": "Name shown by the wallpaper website.",
+  "owner_name": "example",
+
   "wallpaper_width": 1920,
   "wallpaper_height": 1080,
   "avatar_check_seconds": 300
