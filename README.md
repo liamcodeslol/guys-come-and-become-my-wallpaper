@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/forks/liamcodeslol/guys-come-and-become-my-wallpaper?style=flat-square" />
   <img src="https://img.shields.io/github/last-commit/liamcodeslol/guys-come-and-become-my-wallpaper?style=flat-square" />
   <img src="https://img.shields.io/github/license/liamcodeslol/guys-come-and-become-my-wallpaper?style=flat-square" />
-  <img alt="Static Badge" src="https://img.shields.io/badge/build-passing-brightgreen">
+  <img alt="Static Badge" src="https://img.shields.io/badge/personal tests on own site-passing-brightgreen">
   <img alt="Static Badge" src="https://img.shields.io/badge/opensource-true-brightgreen">
 
 </p>
