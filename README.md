@@ -11,6 +11,11 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/opensource-true-brightgreen">
 
 </p>
+##
+making discord bot
+go to https://discord.com/developers/home
+  <img alt="Dev Page" src="./docs/Screenshot 2026-09-05 082632.png">
+
 clone w/ github stuff which u can check or with git
 pls star pls pls
 
