@@ -1,3 +1,7 @@
+clone w/ github stuff which u can check or with git
+```bash
+git clone https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper.git
+```
 just install requirements and open config.json which is like really readable with comments
 ```bash
 pip install -r requirements.txt
