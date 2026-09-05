@@ -1,154 +1,238 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <link rel="icon" type="image/png" href="/favicon">
 
-    <title>You're on the wallpaper</title>
 
-  <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            min-height: 100%;
-        }
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-        body {
-            min-height: 100vh;
-            background:
-                linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-                url("/wallpaper") center center / cover no-repeat fixed;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<title>You're on the wallpaper</title>
 
+<style>
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+
+        background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.55),
+                rgba(0, 0, 0, 0.55)
+            ),
+            url("/wallpaper") center center / cover no-repeat fixed;
+
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+        min-height: 100vh;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 48px 7vw;
+    }
+
+    .small {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        margin-bottom: 30px;
+        color: #ddd;
+    }
+
+    h1 {
+        max-width: 1050px;
+        margin: 0 0 34px;
+
+        font-size: clamp(48px, 8vw, 110px);
+        line-height: 0.91;
+        letter-spacing: -0.065em;
+        font-weight: 800;
+    }
+
+    p {
+        max-width: 580px;
+
+        font-size: 18px;
+        line-height: 1.55;
+
+        margin: 0 0 28px;
+
+        color: #ddd;
+    }
+
+    .button {
+        width: fit-content;
+
+        background: white;
+        color: #111;
+
+        padding: 15px 20px;
+
+        text-decoration: none;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        transition: opacity 0.2s ease;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+
+    .footer {
+        position: fixed;
+        left: 7vw;
+        bottom: 32px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .github-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        color: #ffffff;
+        text-decoration: none;
+
+        font-size: 11px;
+        font-weight: 700;
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease;
+    }
+
+    .github-link:hover {
+        color: #ffffff;
+        opacity: 0.75;
+        transform: translateY(-1px);
+    }
+
+    .github-icon {
+        width: 20px;
+        height: 20px;
+
+        fill: #ffffff;
+
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 600px) {
         .page {
-            min-height: 100vh;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 48px 7vw;
-        }
-
-<div class="footer">
-    <a
-        href="https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="github-link"
-    >
-        <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.11c.97 0 1.94.13 2.85.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
-        </svg>
-
-        <span>Go to open source project on GitHub!</span>
-    </a>
-</div>
-
-        .small {
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.16em;
-            margin-bottom: 30px;
-            color: #ddd;
+            padding: 40px 7vw;
         }
 
         h1 {
-            max-width: 1050px;
-            margin: 0 0 34px;
-            font-size: clamp(48px, 8vw, 110px);
-            line-height: 0.91;
-            letter-spacing: -0.065em;
-            font-weight: 800;
+            font-size: clamp(44px, 15vw, 72px);
         }
 
         p {
-            max-width: 580px;
-            font-size: 18px;
-            line-height: 1.55;
-            margin: 0 0 28px;
-            color: #ddd;
-        }
-
-        .button {
-            width: fit-content;
-            background: white;
-            color: #111;
-            padding: 15px 20px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .button:hover {
-            opacity: 0.85;
+            font-size: 16px;
         }
 
         .footer {
-            position: absolute;
-            bottom: 32px;
-            font-size: 11px;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: #aaa;
+            left: 7vw;
+            bottom: 24px;
         }
-    </style>
+
+        .github-link {
+            font-size: 9px;
+        }
+
+        .github-icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+</style>
+
+
 </head>
 
 <body>
-    <main class="page success">
-        <div class="small">
-            DONE
-        </div>
 
-        <h1>
-            you're on {{ owner }}'s wallpaper now!
-        </h1>
+<main class="page success">
 
-        <p>
-            your pfp has been added.
-        </p>
+    <div class="small">
+        DONE
+    </div>
 
-        <p>
-            sending you back to Discord in
-            <b id="count">5</b>
-            seconds!
-        </p>
-    </main>
+    <h1>
+        you're on {{ owner }}'s wallpaper now!
+    </h1>
 
-    <script>
-        let count = 5;
-        const element = document.getElementById("count");
+    <p>
+        your pfp has been added.
+    </p>
 
-        const timer = setInterval(() => {
-            count--;
-            element.textContent = count;
+    <p>
+        sending you back to Discord in
+        <b id="count">5</b>
+        seconds!
+    </p>
 
-            if (count <= 0) {
-                clearInterval(timer);
-                window.location.href = "https://discord.com/app";
-            }
-        }, 1000);
-    </script>
-</body>
-<div class="footer">
+</main>
+
+<footer class="footer">
     <a
         href="https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper"
         target="_blank"
         rel="noopener noreferrer"
         class="github-link"
     >
-        <svg class="github-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.11c.97 0 1.94.13 2.85.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+        <svg
+            class="github-icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.303-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.292-1.552 3.295-1.23 3.295-1.23.648 1.653.24 2.873.12 3.176.765.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.624-5.48 5.92.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .316.216.69.825.572C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/>
         </svg>
 
-        <span>Go to open source project on GitHub!</span>
+        <span>
+            Go to open source project on GitHub!
+        </span>
     </a>
-</div>
+</footer>
 
+<script>
+    let count = 5;
+
+    const element = document.getElementById("count");
+
+    const timer = setInterval(() => {
+        count--;
+
+        element.textContent = count;
+
+        if (count <= 0) {
+            clearInterval(timer);
+
+            window.location.href = "https://discord.com/app";
+        }
+    }, 1000);
+</script>
+
+</body>
 </html>
