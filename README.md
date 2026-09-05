@@ -10,6 +10,7 @@
 </p>
 
 clone w/ github stuff which u can check or with git
+pls star pls pls
 
 ```
 git clone https://github.com/liamcodeslol/guys-come-and-become-my-wallpaper.git
