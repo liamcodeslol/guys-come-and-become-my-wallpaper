@@ -1,46 +1,65 @@
 # Liam's Wallpaper
 
-## ONLY FOR WINDOWS, if enough ppl want it i'll make a linux or mac version but lowk i dont got a mac cuz im broke as shit
+For WINDOWS only, if enough people want a linux or mac version I'll make one sooner or later but lowk I don't have a mac because I'm broke as hell
 
-Little project I've made so that my friends can put themselves on my desktop wallpaper as a fun little thing I guess.
+It's something I made to let my friends put as a funny story on my laptop wallpaper, but it's cool nonetheless.
 
-Friends are authorized via Discord OAuth2 and their profile picture is added automatically to the wallpaper! If they change their avatar in the future, the wallpaper is updated automatically which is done by Python periodically.
+Friends are authorized through discord oauth2 and their profile picture is added to the wallpaper! If their profile picture customization is within success, it will regularly replace the wallpaper, this is cured using python
 
-<p align="center">
-  <img src="https://img.shields.io/badge/platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows">
-  <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Flask-3.1-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/Discord-OAuth2-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord OAuth2">
-</p>
+Setup
+· 2.
 
-<p align="center">
-  <a href="#setup">Setup</a>
-  ·
-  <a href="#configuration">Configuration</a>
-  ·
-  <a href="#how-it-works">How it works</a>
-  ·
-  <a href="#routes">Routes</a>
-</p>
+Setup:
+· 2.
 
+How's it going?
+· 2.
+
+The roads
 ---
-
 ## Preview
 
-> Add screenshots/GIFs of the website and wallpaper here.
-
-<p align="center">
-  <img src="docs/website.png" width="48%" alt="Website preview">
-  <img src="docs/wallpaper.png" width="48%" alt="Wallpaper preview">
-</p>
-
+> Add screenshots/GIFs and wallpapers to your website right here
 ---
+## What does it
 
-## What it does
+Discord friends can authorize themselves with one click
+Their deviant avatar is regularly introduced into wallpaper .
+Usernames are displayed below the avatars
 
-* Discord friends can authorize themselves with one click
-* Their Discord avatar is automatically added to the wallpaper
-* Usernames are shown underneath each avatar
-* Wallpaper is automatically generated as a PNG file
-* Windows automatically switches to the new wallpaper
-* Avatars are periodically checked for changes
+The wallpaper is robotically generated as a png report
+
+Windows automatically changes the wallpaper
+Avatars are periodically tested
+If a friend changes their conflict avatar, the wallpaper updates mechanically
+---
+## Setup
+Install Python
+You can install Python 3.10 or later
+Check if you have Python installed:
+Runs
+Dragon -- replica
+```
+If not now, install Python.
+Make sure to check "Add Python to PATH".
+### 2. Clone the repository
+Runs
+git clone https://github.com/YOUR_USERNAME/liams-wallpaper.Git
+cd liams-tapet
+```
+### Three. Install the dependencies
+Runs
+pip install -r requirements.Txt
+```
+### Four. Install the discord utility
+Before navigating the application, you need to configure the Discord utility and establish an OAuth2 connection.
+See the Configuration step below.
+### 5. Run the app
+Runs
+python program. Py
+```
+The website is now available at:
+```The text
+http://localhost:5035
+```
+If you host this elsewhere, use your do
