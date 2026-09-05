@@ -11,7 +11,7 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/opensource-true-brightgreen">
 
 </p>
-
+also I MADE A CUSTOM LICENSE
 clone w/ github stuff which u can check or with git
 pls star pls pls
 
